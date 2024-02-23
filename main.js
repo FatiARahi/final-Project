@@ -1,42 +1,42 @@
-var quizTitle = "Geography Quiz";
+var quizTitle = "History Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "The equator passes through ?",
+            "question"      :   "The Ashanti Kingdom first existed in which African country?",
            
             "choices"       :   [
-                                "Ethiopia",
-                                "Kenya",
-                                "Nigeria",
-                                "Sudan",
+                                "Mali",
+                                "Morocco",
+                                "Ghana",
+                                "Tanzania",
             ],   
-            "correct"       : "Kenya",
+            "correct"       : "Ghana",
     
         },
 
         {
-            "question"      :   "Which one of the following is the largest Producer of Petroleum in South America ?",
+            "question"      :   "Which of the following years is often referred to as the Year of Revolutions?",
            
             "choices"       :   [
-                                    "Argentina",
-                                    "Brazil",
-                                    "Colambia",
-                                    "Venezuela"
+                                    "1812",
+                                    "1830",
+                                    "1848",
+                                    "1918"
                                     
                                 ],
-            "correct"       :   "Brazil",
+            "correct"       :   "1848",
            
         },
         {
-            "question"      :   "Willy-willy is the tropical cyclone occurring in ? ",
+            "question"      :   "Which European explorer died fighting indigenous people in the Philippines?",
            
             "choices"       :   [
-                                    "China sea",
-                                    "Caribbean sea",
-                                    "Coast of North west Australia",
-                                    "Guld of Maxico"
+                                    "Ferdinand Magellan",
+                                    "Christopher Columbus",
+                                    "Hernán Cortéc",
+                                    "Francisco Pizarro"
                                 ],
-            "correct"       :   "Coast of North west Australia",
+            "correct"       :   "Ferdinand Magellan",
             
         },
 
@@ -54,15 +54,15 @@ var quizTitle = "Geography Quiz";
         },
 
         {
-            "question"      :   "The VOLTA River project is located in ?",
+            "question"      :   "Mughal emperor Akbar the Great owned how many elephants?",
            
             "choices"       :   [
-                                    "Nigeria",
-                                    "Sudan",
-                                    "Ghana",
-                                    "Republic of Cango"
+                                    "65,000",
+                                    "55,000",
+                                    "45,000",
+                                    "35,000"
                                 ],
-            "correct"       :   "Ghana",
+            "correct"       :   "35,000",
         
         },
 
