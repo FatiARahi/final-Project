@@ -1,136 +1,135 @@
-var quizTitle = "English Quiz";
+var quizTitle = "Geography Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "What is the study of the origin and history of words called?",
+            "question"      :   "The equator passes through ?",
            
             "choices"       :   [
-                                "Etymology",
-                                "Syntax",
-                                "Semantics",
-                                "Morphology",
+                                "Ethiopia",
+                                "Kenya",
+                                "Nigeria",
+                                "Sudan",
             ],   
-            "correct"       : "Etymology",
+            "correct"       : "Kenya",
     
         },
 
         {
-            "question"      :   "Who is considered the author of the famous play Romeo and Juliet?",
+            "question"      :   "Which one of the following is the largest Producer of Petroleum in South America ?",
            
             "choices"       :   [
-                                    "William Shakespeare",
-                                    " Jane Austen",
-                                    "Charles Dickens ",
-                                    "F. Scott Fitzgerald"
+                                    "Argentina",
+                                    "Brazil",
+                                    "Colambia",
+                                    "Venezuela"
                                     
                                 ],
-            "correct"       :   "William Shakespeare",
+            "correct"       :   "Brazil",
            
         },
         {
-            "question"      :   "What literary device is used when a non-human object is given human characteristics?",
+            "question"      :   "Willy-willy is the tropical cyclone occurring in ? ",
            
             "choices"       :   [
-                                    " Simile",
-                                    "Metaphor",
-                                    "Personification",
-                                    "Hyperbole"
+                                    "China sea",
+                                    "Caribbean sea",
+                                    "Coast of North west Australia",
+                                    "Guld of Maxico"
                                 ],
-            "correct"       :   "Personification",
+            "correct"       :   "Coast of North west Australia",
             
         },
 
         {
-            "question"      :   "Who wrote the novel To Kill a Mockingbird?",
+            "question"      :   "Which one of the following is NOT an alpine range of mountain formed during tertiary Period ?",
            
             "choices"       :   [
-                                    "Harper Lee",
-                                    "J.D. Salinger",
-                                    "Mark Twain",
-                                    "George Orwell"
-                                    
+                                    "Alps",
+                                    "Himalayas",
+                                    "Andes",
+                                    "Arawali"    
                                 ],
-            "correct"       :   "Harper Lee",
+            "correct"       :   "Arawali",
          
         },
 
         {
-            "question"      :   "What is the literary term for a play on words that relies on two words having the same sound but different meanings?",
+            "question"      :   "The VOLTA River project is located in ?",
            
             "choices"       :   [
-                                    "Pun",
-                                    " Irony",
-                                    " Alliteration",
-                                    "Oxymoron"
+                                    "Nigeria",
+                                    "Sudan",
+                                    "Ghana",
+                                    "Republic of Cango"
                                 ],
-            "correct"       :   "Pun",
+            "correct"       :   "Ghana",
         
         },
 
        
 
         {
-            "question"      :   "Who wrote the famous poem The Raven?.",
+            "question"      :   "The place where Blue Nile and white Nile effect a Confluence is ?",
            
             "choices"       :   [
-                                    "Edgar Allan Poe",
-                                    "Emily Dickinson",
-                                    " Robert Frost",
-                                    "Walt Whitman16"
+                                    "Port said",
+                                    "Cairo",
+                                    "Khartoum",
+                                    "Alexandria"
                                 ],
-            "correct"       :   "Edgar Allan Poe",
+            "correct"       :   "Khartoum",
           
         },
 
         {
-            "question"      :   "What is the opposite of the word verbose? ",
+            "question"      :   "The innermost layer of the earth is known as ?",
           
             "choices"       :   [
-                                    "Concise",
-                                    " Reticent",
-                                    "Loquacious",
-                                    "Garrulous"
+                                    "Lithosphere",
+                                    "Mesosphere",
+                                    "Asthenosphere",
+                                    "Barysphere"
                                 ],
-            "correct"       :   "Concise",
+            "correct"       :   "Mesosphere",
           
         },
 
         {
-            "question"      :   "Which of the following is not a type of verb tense?",
+            "question"      :   "The highest average salinity amongst the following seas is reported from",
             
             "choices"       :   [
-                                    "Past",
-                                    " Present",
-                                    " Future",
-                                    "Continuous"
+                                    "Dead Sea",
+                                    "Red Sea",
+                                    "Black Sea",
+                                    "Mediterranean Sea"
                                 ],
-            "correct"       :   "Continuous",
+            "correct"       :   "Dead Sea",
          
         },
 
         {
-            "question"      :   "What is the term for a word that is spelled the same but has different meanings and pronunciations?",
+            "question"      :   "Which plant is known as MORNING STAR and EVENING STAR ?",
             
             "choices"       :   [
-                                    "Synonym",
-                                    " Homonym",
-                                    "Antonym",
-                                    " Homophone"
+                                    "Venus",
+                                    "Mercury",
+                                    "Earth",
+                                    "Mars"
                                 ],
-            "correct"       :   " Homonym",
+            "correct"       :   "Venus",
           
         },
 
         {
-            "question"      :   "Which of the following is a synonym for the word eloquent?",
+            "question"      :   "The great Victoria Desert is located in",
            
             "choices"       :   [
-                                    " Inarticulate",
-                                    "Fluent",
-                                    "Rambling",
-                                    "Garbled"
+                                    "Canada",
+                                    "West Africa",
+                                    "Australia",
+                                    "North America"
                                 ],
-            "correct"       :   "Fluent",
+            "correct"       :   "Australia",
            
         },
 
