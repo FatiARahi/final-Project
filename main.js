@@ -1,135 +1,135 @@
-var quizTitle = "Coding Quiz";
+var quizTitle = "Computer Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "What is the purpose of a variable in programming?",
+            "question"      :   "Software that helps monitors and control computer system in a data centre. The best fit will be",
            
             "choices"       :   [
-                                "To store data",
-                                "To perform mathematical calculations",
-                                "To execute loops",
-                                "To display output",
+                                "System performance monitor",
+                                "Telecommunication network management",
+                                "Out sourcing is operations",
+                                "Technology management",
             ],   
-            "correct"       : "To store data",
+            "correct"       : "System performance monitor",
     
         },
 
         {
-            "question"      :   "Which of the following is not a programming language?",
+            "question"      :   "Information technology affect the people, tasks, technology, culture, and structure of organizations",
            
             "choices"       :   [
-                                    "Python",
-                                    "HTML",
-                                    "Java",
-                                    "CSS"
+                                    "Impact of IT on management",
+                                    "Impact of IT on organization",
+                                    "Information system",
+                                    "Operations and management"
                                     
                                 ],
             "correct"       :   "HTML",
            
         },
         {
-            "question"      :   "What does HTML stand for? ",
+            "question"      :   "Which of the following is not an ITES of data management category? ",
            
             "choices"       :   [
-                                    "Hyperlinks and Text Markup Language",
-                                    "Hypertext Markup Language ",
-                                    "Home Tool Markup Language",
-                                    "Hyper Terminal Markup Language"
+                                    "Data Entry",
+                                    "Custom reports",
+                                    "Character Recognition and processing",
+                                    "Transcription"
                                 ],
-            "correct"       :   "Hypertext Markup Language ",
+            "correct"       :   "Transcription",
             
         },
 
         {
-            "question"      :   "What does CSS stand for?",
+            "question"      :   "Auxillary memory is",
            
             "choices"       :   [
-                                    " Creative Style Sheets",
-                                    "Cascading Style Sheets",
-                                    "Computer Style Sheets",
-                                    " Colorful Style Sheets"    
+                                    "cache memory",
+                                    "secondary memory",
+                                    "extended memory",
+                                    " memory slot"    
                                 ],
-            "correct"       :   "Cascading Style Sheets",
+            "correct"       :   "secondary memory",
          
         },
 
         {
-            "question"      :   "What is the purpose of the 'if' statement in programming?",
+            "question"      :   "How many units in a single bus structure communicate at a time?",
            
             "choices"       :   [
-                                    "To repeat a block of code multiple times",
-                                    "To define a function",
-                                    "To make a decision based on a condition",
-                                    "To declare a variable  "
+                                    "one",
+                                    "two",
+                                    "three",
+                                    "four"
                                 ],
-            "correct"       :   "To make a decision based on a condition",
+            "correct"       :   "two",
         
         },
 
        
 
         {
-            "question"      :   "Which programming language is primarily used for web development?",
+            "question"      :   "Which of the following is the fastest?",
            
             "choices"       :   [
-                                    "Python",
-                                    "C++",
-                                    "JavaScript",
-                                    "Swift"
+                                    "sensors, mechanical controllers",
+                                    "video terminal",
+                                    "magnetic tapes and disks",
+                                    "central processing unit"
                                 ],
-            "correct"       :   "JavaScript",
+            "correct"       :   "central processing unit",
           
         },
 
         {
-            "question"      :   "What is the primary purpose of a loop in programming?",
+            "question"      :   "Microprocessor can be used to make",
           
             "choices"       :   [
-                                    "To perform a specific task once",
-                                    "To store data",
-                                    " To repeat a block of code multiple times",
-                                    " To make a decision based on a condition"
+                                    "calculators",
+                                    "computers",
+                                    "digital systems",
+                                    "all of these"
                                 ],
-            "correct"       :   " To repeat a block of code multiple times",
+            "correct"       :   "all of these",
           
         },
 
         {
-            "question"      :   "Which symbol is used to indicate the end of a statement in many programming languages?",
+            "question"      :   "A collection of wires that connects several devices is called",
             
             "choices"       :   [
-                                    ";",
-                                    ":",
-                                    ".",
-                                    ","
+                                    "bus",
+                                    "bidirectional wires",
+                                    "cables",
+                                    "link"
                                 ],
-            "correct"       :   ";",
+            "correct"       :   "bus",
          
         },
 
         {
-            "question"      :   "Which of the following is an example of a loop in programming?",
+            "question"      :   "A single bus structure is primarily found in",
             
             "choices"       :   [
-                                    "If statement",
-                                    "For loop",
-                                    "Function",
-                                    "Variable declaration"
+                                    "mini and micro computers",
+                                    "high performance machines",
+                                    "main frames",
+                                    "super computers"
                                 ],
-            "correct"       :   "For loop",
+            "correct"       :   "mini and micro computers",
           
         },
 
         {
-            "question"      :   "What does the acronym IDE stand for?",
+            "question"      :   "The ALU of computer normally contains a number of high speed storage elements is called",
            
             "choices"       :   [
-                                    " Integrated Development Environment",
-                                    "Internet Development Engine",
-                                    "Interactive Development Environment",
-                                    " Integrated Design Environment"
+                                    "magnetic disk",
+                                    "hard disk",
+                                    "registers",
+                                    "semiconductor memory"
                                 ],
-            "correct"       :   " Integrated Development Environment",
+            "correct"       :   "registers",
            
         },
 
