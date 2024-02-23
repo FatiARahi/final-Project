@@ -1,135 +1,136 @@
-var quizTitle = "Computer Quiz";
+var quizTitle = "English Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "Software that helps monitors and control computer system in a data centre. The best fit will be",
+            "question"      :   "What is the study of the origin and history of words called?",
            
             "choices"       :   [
-                                "System performance monitor",
-                                "Telecommunication network management",
-                                "Out sourcing is operations",
-                                "Technology management",
+                                "Etymology",
+                                "Syntax",
+                                "Semantics",
+                                "Morphology",
             ],   
-            "correct"       : "System performance monitor",
+            "correct"       : "Etymology",
     
         },
 
         {
-            "question"      :   "Information technology affect the people, tasks, technology, culture, and structure of organizations",
+            "question"      :   "Who is considered the author of the famous play Romeo and Juliet?",
            
             "choices"       :   [
-                                    "Impact of IT on management",
-                                    "Impact of IT on organization",
-                                    "Information system",
-                                    "Operations and management"
+                                    "William Shakespeare",
+                                    " Jane Austen",
+                                    "Charles Dickens ",
+                                    "F. Scott Fitzgerald"
                                     
                                 ],
-            "correct"       :   "HTML",
+            "correct"       :   "William Shakespeare",
            
         },
         {
-            "question"      :   "Which of the following is not an ITES of data management category? ",
+            "question"      :   "What literary device is used when a non-human object is given human characteristics?",
            
             "choices"       :   [
-                                    "Data Entry",
-                                    "Custom reports",
-                                    "Character Recognition and processing",
-                                    "Transcription"
+                                    " Simile",
+                                    "Metaphor",
+                                    "Personification",
+                                    "Hyperbole"
                                 ],
-            "correct"       :   "Transcription",
+            "correct"       :   "Personification",
             
         },
 
         {
-            "question"      :   "Auxillary memory is",
+            "question"      :   "Who wrote the novel To Kill a Mockingbird?",
            
             "choices"       :   [
-                                    "cache memory",
-                                    "secondary memory",
-                                    "extended memory",
-                                    " memory slot"    
+                                    "Harper Lee",
+                                    "J.D. Salinger",
+                                    "Mark Twain",
+                                    "George Orwell"
+                                    
                                 ],
-            "correct"       :   "secondary memory",
+            "correct"       :   "Harper Lee",
          
         },
 
         {
-            "question"      :   "How many units in a single bus structure communicate at a time?",
+            "question"      :   "What is the literary term for a play on words that relies on two words having the same sound but different meanings?",
            
             "choices"       :   [
-                                    "one",
-                                    "two",
-                                    "three",
-                                    "four"
+                                    "Pun",
+                                    " Irony",
+                                    " Alliteration",
+                                    "Oxymoron"
                                 ],
-            "correct"       :   "two",
+            "correct"       :   "Pun",
         
         },
 
        
 
         {
-            "question"      :   "Which of the following is the fastest?",
+            "question"      :   "Who wrote the famous poem The Raven?.",
            
             "choices"       :   [
-                                    "sensors, mechanical controllers",
-                                    "video terminal",
-                                    "magnetic tapes and disks",
-                                    "central processing unit"
+                                    "Edgar Allan Poe",
+                                    "Emily Dickinson",
+                                    " Robert Frost",
+                                    "Walt Whitman16"
                                 ],
-            "correct"       :   "central processing unit",
+            "correct"       :   "Edgar Allan Poe",
           
         },
 
         {
-            "question"      :   "Microprocessor can be used to make",
+            "question"      :   "What is the opposite of the word verbose? ",
           
             "choices"       :   [
-                                    "calculators",
-                                    "computers",
-                                    "digital systems",
-                                    "all of these"
+                                    "Concise",
+                                    " Reticent",
+                                    "Loquacious",
+                                    "Garrulous"
                                 ],
-            "correct"       :   "all of these",
+            "correct"       :   "Concise",
           
         },
 
         {
-            "question"      :   "A collection of wires that connects several devices is called",
+            "question"      :   "Which of the following is not a type of verb tense?",
             
             "choices"       :   [
-                                    "bus",
-                                    "bidirectional wires",
-                                    "cables",
-                                    "link"
+                                    "Past",
+                                    " Present",
+                                    " Future",
+                                    "Continuous"
                                 ],
-            "correct"       :   "bus",
+            "correct"       :   "Continuous",
          
         },
 
         {
-            "question"      :   "A single bus structure is primarily found in",
+            "question"      :   "What is the term for a word that is spelled the same but has different meanings and pronunciations?",
             
             "choices"       :   [
-                                    "mini and micro computers",
-                                    "high performance machines",
-                                    "main frames",
-                                    "super computers"
+                                    "Synonym",
+                                    " Homonym",
+                                    "Antonym",
+                                    " Homophone"
                                 ],
-            "correct"       :   "mini and micro computers",
+            "correct"       :   " Homonym",
           
         },
 
         {
-            "question"      :   "The ALU of computer normally contains a number of high speed storage elements is called",
+            "question"      :   "Which of the following is a synonym for the word eloquent?",
            
             "choices"       :   [
-                                    "magnetic disk",
-                                    "hard disk",
-                                    "registers",
-                                    "semiconductor memory"
+                                    " Inarticulate",
+                                    "Fluent",
+                                    "Rambling",
+                                    "Garbled"
                                 ],
-            "correct"       :   "registers",
+            "correct"       :   "Fluent",
            
         },
 
