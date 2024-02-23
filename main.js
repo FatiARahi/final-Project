@@ -1,135 +1,136 @@
-var quizTitle = "History Quiz";
+var quizTitle = "Mathematics Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "The Ashanti Kingdom first existed in which African country?",
+            "question"      :   "The square root of 0.0081 is",
            
             "choices"       :   [
-                                "Mali",
-                                "Morocco",
-                                "Ghana",
-                                "Tanzania",
+                                "0.09",
+                                "0.9",
+                                "0.91",
+                                "0.009",
             ],   
-            "correct"       : "Ghana",
+            "correct"       : "0.09",
     
         },
 
         {
-            "question"      :   "Which of the following years is often referred to as the Year of Revolutions?",
+            "question"      :   "234+876=",
            
             "choices"       :   [
-                                    "1812",
-                                    "1830",
-                                    "1848",
-                                    "1918"
+                                    "2357",
+                                    "3794",
+                                    "1298",
+                                    "1110"
                                     
                                 ],
-            "correct"       :   "1848",
+            "correct"       :   "1110",
            
         },
         {
-            "question"      :   "Which European explorer died fighting indigenous people in the Philippines?",
+            "question"      :   "7899 x 23=",
            
             "choices"       :   [
-                                    "Ferdinand Magellan",
-                                    "Christopher Columbus",
-                                    "Hernán Cortéc",
-                                    "Francisco Pizarro"
+                                    " 342,357",
+                                    "300,794",
+                                    "181,677",
+                                    "111,650"
                                 ],
-            "correct"       :   "Ferdinand Magellan",
+            "correct"       :   " 181,677",
             
         },
 
         {
-            "question"      :   "Which one of the following is NOT an alpine range of mountain formed during tertiary Period ?",
+            "question"      :   "234+876=",
            
             "choices"       :   [
-                                    "Alps",
-                                    "Himalayas",
-                                    "Andes",
-                                    "Arawali"    
+                                    "2357",
+                                    "3794",
+                                    "1298",
+                                    "1110"
+                                    
                                 ],
-            "correct"       :   "Arawali",
+            "correct"       :   "3794",
          
         },
 
         {
-            "question"      :   "Mughal emperor Akbar the Great owned how many elephants?",
+            "question"      :   "111-99=",
            
             "choices"       :   [
-                                    "65,000",
-                                    "55,000",
-                                    "45,000",
-                                    "35,000"
+                                    "11",
+                                    "12",
+                                    "13",
+                                    "14"
                                 ],
-            "correct"       :   "35,000",
+            "correct"       :   "12",
         
         },
 
        
 
         {
-            "question"      :   "The place where Blue Nile and white Nile effect a Confluence is ?",
+            "question"      :   "400/25=.",
            
             "choices"       :   [
-                                    "Port said",
-                                    "Cairo",
-                                    "Khartoum",
-                                    "Alexandria"
+                                    "50",
+                                    "10",
+                                    "8",
+                                    "16"
                                 ],
-            "correct"       :   "Khartoum",
+            "correct"       :   "16",
           
         },
 
         {
-            "question"      :   "The innermost layer of the earth is known as ?",
+            "question"      :   "1357+2468=",
           
             "choices"       :   [
-                                    "Lithosphere",
-                                    "Mesosphere",
-                                    "Asthenosphere",
-                                    "Barysphere"
+                                    "9,213,465",
+                                    "2,345,756",
+                                    "3,349,076",
+                                    "1,110,776"
                                 ],
-            "correct"       :   "Mesosphere",
+            "correct"       :   "3,349,076",
           
         },
 
         {
-            "question"      :   "The highest average salinity amongst the following seas is reported from",
+            "question"      :   "79(26+89-62+27)/4=",
             
             "choices"       :   [
-                                    "Dead Sea",
-                                    "Red Sea",
-                                    "Black Sea",
-                                    "Mediterranean Sea"
+                                    "2357",
+                                    "1580",
+                                    "1298",
+                                    "1110"
                                 ],
-            "correct"       :   "Dead Sea",
+            "correct"       :   " 1580",
          
         },
 
         {
-            "question"      :   "Which plant is known as MORNING STAR and EVENING STAR ?",
+            "question"      :   "10020034-897865=",
             
             "choices"       :   [
-                                    "Venus",
-                                    "Mercury",
-                                    "Earth",
-                                    "Mars"
+                                    "9,122,169",
+                                    "3,794,987",
+                                    "2,781,298",
+                                    "8,231,110"
                                 ],
-            "correct"       :   "Venus",
+            "correct"       :   "9,122,169",
           
         },
 
         {
-            "question"      :   "The great Victoria Desert is located in",
+            "question"      :   "2{34*2(20+30-20)}=",
            
             "choices"       :   [
-                                    "Canada",
-                                    "West Africa",
-                                    "Australia",
-                                    "North America"
+                                    "4,957",
+                                    "4,694",
+                                    "4,398",
+                                    "4,080"
                                 ],
-            "correct"       :   "Australia",
+            "correct"       :   "4,080",
            
         },
 
