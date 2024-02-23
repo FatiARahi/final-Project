@@ -1,286 +1,269 @@
-var quizTitle = "Mathematics Quiz";
+var quizTitle = "Physics Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "The square root of 0.0081 is",
+            "question"      :   "Momentum is the product of which two properties?",
            
             "choices"       :   [
-                                "0.09",
-                                "0.9",
-                                "0.91",
-                                "0.009",
-            ],   
-            "correct"       : "0.09",
-    
+                                    "acceleration and force",
+                                    "mass and force",
+                                    "mass and acceleration",
+                                    "mass and velocity"
+                                ],
+            "correct"       :   "mass and velocity",
+            
         },
-
         {
-            "question"      :   "234+876=",
+            "question"      :   "A newton is equal to which of following?",
            
             "choices"       :   [
-                                    "2357",
-                                    "3794",
-                                    "1298",
-                                    "1110"
+                                    "kilogram per meter-second",
+                                    "kilogram-meter per second squared",
+                                    "kilogram-meter per second",
+                                    "meter per second squared"
                                     
                                 ],
-            "correct"       :   "1110",
+            "correct"       :   "kilogram-meter per second squared",
            
         },
         {
-            "question"      :   "7899 x 23=",
+            "question"      :   "Heat transfer by radiation occurs through what?",
            
             "choices"       :   [
-                                    " 342,357",
-                                    "300,794",
-                                    "181,677",
-                                    "111,650"
+                                    "electromagnetic waves",
+                                    "atmospheric currents",
+                                    "molecular and electronic collisions",
+                                    "direct contact"
                                 ],
-            "correct"       :   " 181,677",
+            "correct"       :   "electromagnetic waves",
             
         },
 
         {
-            "question"      :   "234+876=",
+            "question"      :   "Which of the following is physical quantity that has magnitude but no direction?",
            
             "choices"       :   [
-                                    "2357",
-                                    "3794",
-                                    "1298",
-                                    "1110"
+                                    "vector",
+                                    "resultant",
+                                    "scalar",
+                                    "velocity"
                                     
                                 ],
-            "correct"       :   "3794",
+            "correct"       :   "scalar",
          
         },
 
         {
-            "question"      :   "111-99=",
+            "question"      :   "Which device stores and releases electrical charges?",
            
             "choices"       :   [
-                                    "11",
-                                    "12",
-                                    "13",
-                                    "14"
+                                    "semiconductor",
+                                    "resistor",
+                                    "transistor",
+                                    "capacitor"
                                 ],
-            "correct"       :   "12",
+            "correct"       :   "capacitor",
         
         },
 
        
 
         {
-            "question"      :   "400/25=.",
+            "question"      :   "The instrument that measures and records the relative humidity of air is ...",
            
             "choices"       :   [
-                                    "50",
-                                    "10",
-                                    "8",
-                                    "16"
+                                    "hydrometer",
+                                    "hygrometer",
+                                    "lactometer",
+                                    "barometer"
                                 ],
-            "correct"       :   "16",
+            "correct"       :   "hygrometer",
           
         },
 
         {
-            "question"      :   "1357+2468=",
+            "question"      :   "The speed of light is equal to ____  x 10^8m/s.",
           
             "choices"       :   [
-                                    "9,213,465",
-                                    "2,345,756",
-                                    "3,349,076",
-                                    "1,110,776"
+                                    "1.38",
+                                    "3.00",
+                                    "8.85",
+                                    "6.63"
                                 ],
-            "correct"       :   "3,349,076",
+            "correct"       :   "3.00",
           
         },
 
         {
-            "question"      :   "79(26+89-62+27)/4=",
+            "question"      :   "A wave with a relatively long wavelength will also have ...",
             
             "choices"       :   [
-                                    "2357",
-                                    "1580",
-                                    "1298",
-                                    "1110"
+                                    "a long period",
+                                    "a high frequency",
+                                    "a large amplitude",
+                                    "a small amplitude"
                                 ],
-            "correct"       :   " 1580",
+            "correct"       :   "a long period",
          
         },
 
         {
-            "question"      :   "10020034-897865=",
+            "question"      :   "What is the energy process of our Sun?",
             
             "choices"       :   [
-                                    "9,122,169",
-                                    "3,794,987",
-                                    "2,781,298",
-                                    "8,231,110"
+                                    "nuclear fusion",
+                                    "nuclear radioactive decay",
+                                    "nuclear fission",
+                                    "nuclear electromagnetic spectrum"
                                 ],
-            "correct"       :   "9,122,169",
+            "correct"       :   "nuclear fusion",
           
         },
 
         {
-            "question"      :   "2{34*2(20+30-20)}=",
+            "question"      :   "Which part of the electromagnetic spectrum has the shortest wavelength?",
            
             "choices"       :   [
-                                    "4,957",
-                                    "4,694",
-                                    "4,398",
-                                    "4,080"
+                                    "visible light",
+                                    "infrared",
+                                    "gamma rays",
+                                    "UV rays"
                                 ],
-            "correct"       :   "4,080",
+            "correct"       :   "gamma rays",
            
         },
 
         
                         
     ];
-   
 
-    var currentQuestion = 0;
-    var score = 0;
-    var submt = true;
-    var picked;
+
+var currentQuestion = 0;
+var score = 0;
+var submt=true;
+var picked;
+
+
+jQuery(document).ready(function($){
+
+
     
-    jQuery(document).ready(function($){
+    function htmlEncode(value){
+      return $(document.createElement('div')).text(value).html();
+    }
     
-        function htmlEncode(value){
-            return $(document.createElement('div')).text(value).html();
-        }
-    
-        function addChoices(choices){
-            if(typeof choices !== "undefined" && $.type(choices) == "array"){
-                $('#choice-block').empty();
-                for(var i=0;i<choices.length; i++){
-                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
-                }
+    function addChoices(choices){
+        if(typeof choices !== "undefined" && $.type(choices) == "array"){
+            $('#choice-block').empty();
+            for(var i=0;i<choices.length; i++){
+                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
             }
         }
+    }
     
-        function nextQuestion(){
-            submt = true;
-            $('#question').text(quizQuestions[currentQuestion]['question']);
-            $('#pager').text('Question ' + Number(currentQuestion + 1) + ' of ' + quizQuestions.length);
-            addChoices(quizQuestions[currentQuestion]['choices']);
+    function nextQuestion(){
+        submt = true;
+        $('#question').text(quizQuestions[currentQuestion]['question']);
+        $('#pager').text('Question ' + Number(currentQuestion + 1) + ' of ' + quizQuestions.length);
+        addChoices(quizQuestions[currentQuestion]['choices']);
+        setupButtons();
+    }
+    
+    function processQuestion(choice){
+        if(quizQuestions[currentQuestion]['choices'][choice] == quizQuestions[currentQuestion]['correct']){
+            $('.choice').eq(choice).css({'background-color':'#50D943'});
+            score++;
+        } else {
+            $('.choice').eq(choice).css({'background-color':'#D92623'});
+        }
+        currentQuestion++;
+        $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+            if(currentQuestion == quizQuestions.length){
+                endQuiz();
+            } else {
+                $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                nextQuestion();
+            }
+        })
+    }
+   
+    function setupButtons() {
+        $('.choice').on('click', function() {
+            picked = $(this).attr('data-index');
+            $('.choice').removeClass('clicked'); // Remove clicked class from all choices
+            $(this).addClass('clicked'); // Add clicked class to the selected choice
+            if (submt) {
+                submt = false;
+                $('#submitbutton').css({
+                    'color': 'white'
+                }).on('click', function() {
+                    $('.choice').off('click');
+                    $(this).off('click');
+                    processQuestion(picked);
+                });
+            }
+        });
+    }
+    
+    
+    
+    function endQuiz(){
+            
+        $('#question').empty();
+
+        if (score >= 10){
+
+            $('#choice-block').html('<center>Excellent</center>');
+        }
+        if (score >= 8 && score < 10){
+            
+            $('#choice-block').html('<center>good</center>');
+        }
+
+        if (score >= 6 && score < 8){
+
+            $('#choice-block').html('<center>improve your self</center>');
+        }
+
+        if (score <5){
+
+            $('#choice-block').html('<center>very bad</center>');
+        }
+        
+        $('#submitbutton').remove();
+        $('#question').text("You got " + score + " out of " + quizQuestions.length + " correct.");
+        $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quizQuestions.length * 100) + '%').insertAfter('#question');
+        
+        
+    }
+   
+    function init(){
+       
+        if(typeof quizTitle !== "undefined" && $.type(quizTitle) === "string"){
+            $(document.createElement('h1')).text(quizTitle).appendTo('#frame');
+        } else {
+            $(document.createElement('h1')).text("Quiz").appendTo('#frame');
+        }
+      
+        if(typeof quizQuestions !== "undefined" && $.type(quizQuestions) === "array"){
+           
+            $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quizQuestions.length).appendTo('#frame');
+           
+            $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quizQuestions[0]['question']).appendTo('#frame');
+            
+            if(quizQuestions[0].hasOwnProperty('image') && quizQuestions[0]['image'] != ""){
+                $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quizQuestions[0]['image']).attr('alt', htmlEncode(quizQuestions[0]['question'])).appendTo('#frame');
+            }
+                            
+            $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+        
+            addChoices(quizQuestions[0]['choices']);
+        
+            $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+        
             setupButtons();
         }
+    }
     
-        function processQuestion(choice){
-            if(quizQuestions[currentQuestion]['choices'][choice] == quizQuestions[currentQuestion]['correct']){
-                $('.choice').eq(choice).css({'background-color':'#50D943'});
-                score++;
-            } else {
-                $('.choice').eq(choice).css({'background-color':'#D92623'});
-            }
-            currentQuestion++;
-            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
-                if(currentQuestion == quizQuestions.length){
-                    endQuiz();
-                } else {
-                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
-                    nextQuestion();
-                }
-            });
-        }
-    
-        function setupButtons() {
-            $('.choice').on('click', function() {
-                picked = $(this).attr('data-index');
-                $('.choice').removeClass('clicked'); // Remove clicked class from all choices
-                $(this).addClass('clicked'); // Add clicked class to the selected choice
-                if (submt) {
-                    submt = false;
-                    $('#submitbutton').css({
-                        'color': 'white'
-                    }).on('click', function() {
-                        $('.choice').off('click');
-                        $(this).off('click');
-                        processQuestion(picked);
-                    });
-                }
-            });
-        }
-    
-        function endQuiz(){
-            $('#question').empty();
-    
-            if (score >= 10){
-                $('#choice-block').html('<center>Excellent</center>');
-            }
-            if (score >= 8 && score < 10){
-                $('#choice-block').html('<center>Good</center>');
-            }
-            if (score >= 6 && score < 8){
-                $('#choice-block').html('<center>Improve yourself</center>');
-            }
-            if (score < 5){
-                $('#choice-block').html('<center>Very bad</center>');
-            }
-            
-            $('#submitbutton').remove();
-            $('#question').text("You got " + score + " out of " + quizQuestions.length + " correct.");
-            $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quizQuestions.length * 100) + '%').insertAfter('#question');
-            $('#backBtn').show(); // Show the "Back to Main Page" button
-        }
-    
-        function init(){
-           
-            if(typeof quizTitle !== "undefined" && $.type(quizTitle) === "string"){
-                $(document.createElement('h1')).text(quizTitle).appendTo('#frame');
-            } else {
-                $(document.createElement('h1')).text("Quiz").appendTo('#frame');
-            }
-          
-            if(typeof quizQuestions !== "undefined" && $.type(quizQuestions) === "array"){
-               
-                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quizQuestions.length).appendTo('#frame');
-               
-                $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quizQuestions[0]['question']).appendTo('#frame');
-                
-                if(quizQuestions[0].hasOwnProperty('image') && quizQuestions[0]['image'] != ""){
-                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quizQuestions[0]['image']).attr('alt', htmlEncode(quizQuestions[0]['question'])).appendTo('#frame');
-                }
-                                
-                $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
-            
-                addChoices(quizQuestions[0]['choices']);
-            
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
-            
-                setupButtons();
-            }
-        }
-        
-        init();
-        function processQuestion(choice) {
-            const correctAnswerIndex = quizQuestions[currentQuestion]['choices'].indexOf(quizQuestions[currentQuestion]['correct']);
-            const choices = document.querySelectorAll('.choice');
-        
-            if (choice == correctAnswerIndex) {
-                choices[choice].style.backgroundColor = '#50D943'; // Green for correct answer
-                score++;
-            } else {
-                choices[choice].style.backgroundColor = '#D92623'; // Red for wrong answer
-                choices[correctAnswerIndex].style.backgroundColor = '#50D943'; // Highlight correct answer
-            }
-        
-            currentQuestion++;
-            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function() {
-                if (currentQuestion == quizQuestions.length) {
-                    endQuiz();
-                } else {
-                    $(this).text('Check Answer').css({
-                        'color': '#222'
-                    }).off('click');
-                    nextQuestion();
-                }
-            });
-        }
-    
-        // Event handler for "Back to Main Page" button
-        $('#backBtn').on('click', function() {
-            window.location.href = "index.html"; // Replace "index.html" with your main page URL
-        });
-    });
+    init();
+});
