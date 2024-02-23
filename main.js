@@ -1,135 +1,136 @@
-var quizTitle = "Physics Quiz";
+var quizTitle = "Pakistan Studies Quiz";
     
     var quizQuestions = [
         {
-            "question"      :   "Momentum is the product of which two properties?",
+            "question"      :   "Who was the first President of the Constituent Assembly of Pakistan?",
            
             "choices"       :   [
-                                    "acceleration and force",
-                                    "mass and force",
-                                    "mass and acceleration",
-                                    "mass and velocity"
-                                ],
-            "correct"       :   "mass and velocity",
-            
+                                "Liaquat Ali Khan",
+                                "Quaid-e-Azam",
+                                "Moulvi Tameez-ud-Din",
+                                "Sardar Abdur Rab Nishtar"
+            ],   
+            "correct"       : "Quaid-e-Azam",
+    
         },
+
         {
-            "question"      :   "A newton is equal to which of following?",
+            "question"      :   "After how many years Pakistan got its first constitution?",
            
             "choices"       :   [
-                                    "kilogram per meter-second",
-                                    "kilogram-meter per second squared",
-                                    "kilogram-meter per second",
-                                    "meter per second squared"
+                                    "5 years",
+                                    "7 years",
+                                    "9 years",
+                                    "11 years"
                                     
                                 ],
-            "correct"       :   "kilogram-meter per second squared",
+            "correct"       :   "9 years",
            
         },
         {
-            "question"      :   "Heat transfer by radiation occurs through what?",
+            "question"      :   "What literary device is used when a non-human object is given human characteristics?",
            
             "choices"       :   [
-                                    "electromagnetic waves",
-                                    "atmospheric currents",
-                                    "molecular and electronic collisions",
-                                    "direct contact"
+                                    " Simile",
+                                    "Metaphor",
+                                    "Personification",
+                                    "Hyperbole"
                                 ],
-            "correct"       :   "electromagnetic waves",
+            "correct"       :   "Personification",
             
         },
 
         {
-            "question"      :   "Which of the following is physical quantity that has magnitude but no direction?",
+            "question"      :   "What document was firstly drafted to give pace to constitution making process?",
            
             "choices"       :   [
-                                    "vector",
-                                    "resultant",
-                                    "scalar",
-                                    "velocity"
+                                    "Representative Act",
+                                    "Pakistan Act",
+                                    "Independence Act",
+                                    "Objective Resolution"
                                     
                                 ],
-            "correct"       :   "scalar",
+            "correct"       :   "Objective Resolution",
          
         },
 
         {
-            "question"      :   "Which device stores and releases electrical charges?",
+            "question"      :   "When Mohammad Ali Bogra presented Bogra Formula in the assembly?",
            
             "choices"       :   [
-                                    "semiconductor",
-                                    "resistor",
-                                    "transistor",
-                                    "capacitor"
+                                    "January 1953",
+                                    " April 1953",
+                                    " September 1953",
+                                    "October 1953"
                                 ],
-            "correct"       :   "capacitor",
+            "correct"       :   "October 1953",
         
         },
 
        
 
         {
-            "question"      :   "The instrument that measures and records the relative humidity of air is ...",
+            "question"      :   "When the Constituent Assembly passed the Objective Resolution?",
            
             "choices"       :   [
-                                    "hydrometer",
-                                    "hygrometer",
-                                    "lactometer",
-                                    "barometer"
+                                    "14th February 1949",
+                                    "12th March 1949",
+                                    " 9th June 1949",
+                                    "15th August 1949"
                                 ],
-            "correct"       :   "hygrometer",
+            "correct"       :   "12th March 1949",
           
         },
 
         {
-            "question"      :   "The speed of light is equal to ____  x 10^8m/s.",
+            "question"      :   "Who was Mohammad Ali Bogra? ",
           
             "choices"       :   [
-                                    "1.38",
-                                    "3.00",
-                                    "8.85",
-                                    "6.63"
+                                    "Prime Minister",
+                                    "Foreign Minister",
+                                    "Loquacious. Law Minister",
+                                    "Parliament Minister"
                                 ],
-            "correct"       :   "3.00",
+            "correct"       :   "Prime Minister",
           
         },
 
         {
-            "question"      :   "A wave with a relatively long wavelength will also have ...",
+            "question"      :   "What is the other name of Mohammad Ali Bogra Formula?",
             
             "choices"       :   [
-                                    "a long period",
-                                    "a high frequency",
-                                    "a large amplitude",
-                                    "a small amplitude"
+                                    "New Law of Pakistan",
+                                    "Pakistan Report",
+                                    " Third Report ",
+                                    "Constitutional Formula"
                                 ],
-            "correct"       :   "a long period",
+            "correct"       :   "Constitutional Formula",
          
         },
 
         {
-            "question"      :   "What is the energy process of our Sun?",
+            "question"      :   "When first constitution of Pakistan was enforced?",
             
             "choices"       :   [
-                                    "nuclear fusion",
-                                    "nuclear radioactive decay",
-                                    "nuclear fission",
-                                    "nuclear electromagnetic spectrum"
+                                    " 8th June 1956",
+                                    "23rd March 1956",
+                                    "14th August 1956",
+                                    "25th December 1956"
                                 ],
-            "correct"       :   "nuclear fusion",
+            "correct"       :   "23rd March 1956",
           
         },
 
         {
-            "question"      :   "Which part of the electromagnetic spectrum has the shortest wavelength?",
+            "question"      :   "When did Fatima Jinnah joined All India Muslim league?",
            
             "choices"       :   [
-                                    "visible light",
-                                    "infrared",
-                                    "gamma rays",
-                                    "UV rays"
+                                    "1939",
+                                    "1969",
+                                    "1959",
+                                    "1949"
                                 ],
-            "correct"       :   "gamma rays",
+            "correct"       :   "1939",
            
         },
 
@@ -138,132 +139,148 @@ var quizTitle = "Physics Quiz";
     ];
 
 
-var currentQuestion = 0;
-var score = 0;
-var submt=true;
-var picked;
-
-
-jQuery(document).ready(function($){
-
-
+    var currentQuestion = 0;
+    var score = 0;
+    var submt = true;
+    var picked;
     
-    function htmlEncode(value){
-      return $(document.createElement('div')).text(value).html();
-    }
+    jQuery(document).ready(function($){
     
-    function addChoices(choices){
-        if(typeof choices !== "undefined" && $.type(choices) == "array"){
-            $('#choice-block').empty();
-            for(var i=0;i<choices.length; i++){
-                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
+        function htmlEncode(value){
+            return $(document.createElement('div')).text(value).html();
+        }
+    
+        function addChoices(choices){
+            if(typeof choices !== "undefined" && $.type(choices) == "array"){
+                $('#choice-block').empty();
+                for(var i=0;i<choices.length; i++){
+                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', i).text(choices[i]).appendTo('#choice-block');                    
+                }
             }
         }
-    }
     
-    function nextQuestion(){
-        submt = true;
-        $('#question').text(quizQuestions[currentQuestion]['question']);
-        $('#pager').text('Question ' + Number(currentQuestion + 1) + ' of ' + quizQuestions.length);
-        addChoices(quizQuestions[currentQuestion]['choices']);
-        setupButtons();
-    }
-    
-    function processQuestion(choice){
-        if(quizQuestions[currentQuestion]['choices'][choice] == quizQuestions[currentQuestion]['correct']){
-            $('.choice').eq(choice).css({'background-color':'#50D943'});
-            score++;
-        } else {
-            $('.choice').eq(choice).css({'background-color':'#D92623'});
-        }
-        currentQuestion++;
-        $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
-            if(currentQuestion == quizQuestions.length){
-                endQuiz();
-            } else {
-                $(this).text('Check Answer').css({'color':'#222'}).off('click');
-                nextQuestion();
-            }
-        })
-    }
-   
-    function setupButtons() {
-        $('.choice').on('click', function() {
-            picked = $(this).attr('data-index');
-            $('.choice').removeClass('clicked'); // Remove clicked class from all choices
-            $(this).addClass('clicked'); // Add clicked class to the selected choice
-            if (submt) {
-                submt = false;
-                $('#submitbutton').css({
-                    'color': 'white'
-                }).on('click', function() {
-                    $('.choice').off('click');
-                    $(this).off('click');
-                    processQuestion(picked);
-                });
-            }
-        });
-    }
-    
-    
-    
-    function endQuiz(){
-            
-        $('#question').empty();
-
-        if (score >= 10){
-
-            $('#choice-block').html('<center>Excellent</center>');
-        }
-        if (score >= 8 && score < 10){
-            
-            $('#choice-block').html('<center>good</center>');
-        }
-
-        if (score >= 6 && score < 8){
-
-            $('#choice-block').html('<center>improve your self</center>');
-        }
-
-        if (score <5){
-
-            $('#choice-block').html('<center>very bad</center>');
-        }
-        
-        $('#submitbutton').remove();
-        $('#question').text("You got " + score + " out of " + quizQuestions.length + " correct.");
-        $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quizQuestions.length * 100) + '%').insertAfter('#question');
-        
-        
-    }
-   
-    function init(){
-       
-        if(typeof quizTitle !== "undefined" && $.type(quizTitle) === "string"){
-            $(document.createElement('h1')).text(quizTitle).appendTo('#frame');
-        } else {
-            $(document.createElement('h1')).text("Quiz").appendTo('#frame');
-        }
-      
-        if(typeof quizQuestions !== "undefined" && $.type(quizQuestions) === "array"){
-           
-            $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quizQuestions.length).appendTo('#frame');
-           
-            $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quizQuestions[0]['question']).appendTo('#frame');
-            
-            if(quizQuestions[0].hasOwnProperty('image') && quizQuestions[0]['image'] != ""){
-                $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quizQuestions[0]['image']).attr('alt', htmlEncode(quizQuestions[0]['question'])).appendTo('#frame');
-            }
-                            
-            $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
-        
-            addChoices(quizQuestions[0]['choices']);
-        
-            $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
-        
+        function nextQuestion(){
+            submt = true;
+            $('#question').text(quizQuestions[currentQuestion]['question']);
+            $('#pager').text('Question ' + Number(currentQuestion + 1) + ' of ' + quizQuestions.length);
+            addChoices(quizQuestions[currentQuestion]['choices']);
             setupButtons();
         }
-    }
     
-    init();
-});
+        function processQuestion(choice){
+            if(quizQuestions[currentQuestion]['choices'][choice] == quizQuestions[currentQuestion]['correct']){
+                $('.choice').eq(choice).css({'background-color':'#50D943'});
+                score++;
+            } else {
+                $('.choice').eq(choice).css({'background-color':'#D92623'});
+            }
+            currentQuestion++;
+            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function(){
+                if(currentQuestion == quizQuestions.length){
+                    endQuiz();
+                } else {
+                    $(this).text('Check Answer').css({'color':'#222'}).off('click');
+                    nextQuestion();
+                }
+            });
+        }
+    
+        function setupButtons() {
+            $('.choice').on('click', function() {
+                picked = $(this).attr('data-index');
+                $('.choice').removeClass('clicked'); // Remove clicked class from all choices
+                $(this).addClass('clicked'); // Add clicked class to the selected choice
+                if (submt) {
+                    submt = false;
+                    $('#submitbutton').css({
+                        'color': 'white'
+                    }).on('click', function() {
+                        $('.choice').off('click');
+                        $(this).off('click');
+                        processQuestion(picked);
+                    });
+                }
+            });
+        }
+    
+        function endQuiz(){
+            $('#question').empty();
+    
+            if (score >= 10){
+                $('#choice-block').html('<center>Excellent</center>');
+            }
+            if (score >= 8 && score < 10){
+                $('#choice-block').html('<center>Good</center>');
+            }
+            if (score >= 6 && score < 8){
+                $('#choice-block').html('<center>Improve yourself</center>');
+            }
+            if (score < 5){
+                $('#choice-block').html('<center>Very bad</center>');
+            }
+            
+            $('#submitbutton').remove();
+            $('#question').text("You got " + score + " out of " + quizQuestions.length + " correct.");
+            $(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(Math.round(score/quizQuestions.length * 100) + '%').insertAfter('#question');
+            $('#backBtn').show(); // Show the "Back to Main Page" button
+        }
+    
+        function init(){
+           
+            if(typeof quizTitle !== "undefined" && $.type(quizTitle) === "string"){
+                $(document.createElement('h1')).text(quizTitle).appendTo('#frame');
+            } else {
+                $(document.createElement('h1')).text("Quiz").appendTo('#frame');
+            }
+          
+            if(typeof quizQuestions !== "undefined" && $.type(quizQuestions) === "array"){
+               
+                $(document.createElement('p')).addClass('pager').attr('id','pager').text('Question 1 of ' + quizQuestions.length).appendTo('#frame');
+               
+                $(document.createElement('h2')).addClass('question').attr('id', 'question').text(quizQuestions[0]['question']).appendTo('#frame');
+                
+                if(quizQuestions[0].hasOwnProperty('image') && quizQuestions[0]['image'] != ""){
+                    $(document.createElement('img')).addClass('question-image').attr('id', 'question-image').attr('src', quizQuestions[0]['image']).attr('alt', htmlEncode(quizQuestions[0]['question'])).appendTo('#frame');
+                }
+                                
+                $(document.createElement('ul')).attr('id', 'choice-block').appendTo('#frame');
+            
+                addChoices(quizQuestions[0]['choices']);
+            
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+            
+                setupButtons();
+            }
+        }
+        
+        init();
+        function processQuestion(choice) {
+            const correctAnswerIndex = quizQuestions[currentQuestion]['choices'].indexOf(quizQuestions[currentQuestion]['correct']);
+            const choices = document.querySelectorAll('.choice');
+        
+            if (choice == correctAnswerIndex) {
+                choices[choice].style.backgroundColor = '#50D943'; // Green for correct answer
+                score++;
+            } else {
+                choices[choice].style.backgroundColor = '#D92623'; // Red for wrong answer
+                choices[correctAnswerIndex].style.backgroundColor = '#50D943'; // Highlight correct answer
+            }
+        
+            currentQuestion++;
+            $('#submitbutton').html('NEXT QUESTION &raquo;').on('click', function() {
+                if (currentQuestion == quizQuestions.length) {
+                    endQuiz();
+                } else {
+                    $(this).text('Check Answer').css({
+                        'color': '#222'
+                    }).off('click');
+                    nextQuestion();
+                }
+            });
+        }
+    
+        // Event handler for "Back to Main Page" button
+        $('#backBtn').on('click', function() {
+            window.location.href = "index.html"; // Replace "index.html" with your main page URL
+        });
+    });
